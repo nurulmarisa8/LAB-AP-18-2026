@@ -1,0 +1,22 @@
+# # def sapa(nama):
+# #     return "Hallo," + nama
+# # print (sapa("naufal")) 
+
+
+# def luas_persegi_panjang (panjang , lebar):
+#     return panjang * lebar
+# luas_persegi_panjang (5, 10)
+
+
+# def is_genap (angka):
+#     if angka % 2 == 0:
+#         return True
+#     else:
+#         return False
+
+# print(is_genap(12))
+# print(is_genap(7))
+
+# def kalkulator (a, b, operator)
+#     if operator == "-"
+

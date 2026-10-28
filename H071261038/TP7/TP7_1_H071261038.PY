@@ -97,7 +97,7 @@ while True:
         jumlah_produk = int(input("Masukkan jumlah produk : "))
         print("=" * 54)
 
-        # Menyimpan data produk ke dalam dictionary lalu dimasukkan ke list
+        # Menyimpan data produk ke dalam dictionary 
         data = {
             "Nama": nama_produk,
             "Harga": harga_produk,
@@ -122,7 +122,7 @@ while True:
         if Keluar == False:
           membuat_invoices(nama_kasir, data_list)
           break
-      except ValueError:
+      except IOError:
         print("Harga atau jumlah yang anda masukkan tidak valid")
         continue
 
@@ -131,7 +131,7 @@ while True:
     print("=" * 54)
     lokasi_file_folder = os.path.join(folder_invoices, id_transaksi + ".txt")
 
-    # Membaca file menggunakan mode "r" (Read) dan metode read()
+    # Membaca file 
     try:
       if os.path.isfile(lokasi_file_folder):
         with open(lokasi_file_folder, "r", encoding="utf-8") as ada:

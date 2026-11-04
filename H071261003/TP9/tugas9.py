@@ -1,7 +1,7 @@
-# Class Pemain  (cetakan untuk membuat objek)
+# Class Pemain  
 class Pemain:
 
-    # Constructor   (dijalankan saat objek dibuat) self(mengakses atribut dan method object)
+    # Constructor   
     def __init__(self, nama, id_pemain, role,
                  nilai_kill, nilai_assist, nilai_objective):
 
@@ -12,7 +12,7 @@ class Pemain:
         self.nilai_assist = nilai_assist
         self.nilai_objective = nilai_objective
 
-    # Method menghitung skor akhir (fungsi yang berada di dalam class)
+    # Method menghitung skor akhir 
     def hitung_skor_akhir(self):
         skor = (0.3 * self.nilai_kill) + \
                (0.3 * self.nilai_assist) + \
@@ -110,9 +110,3 @@ for i, pemain in enumerate(daftar_pemain, start=1):
     pemain.tampilkan_data(i)
 
 print("=" * 80)
-#Class = Cetakan untuk membuat objek
-#Object = Hasil dari Class
-#Attribute = Data yang dimiliki objek
-#Method = Fungsi yang berada di dalam class.
-#Constructor = Method khusus __init__() yang dijalankan saat objek dibuat
-#Self = Mengacu pada objek yang sedang digunakan
